@@ -4,7 +4,7 @@ if(isset($_GET['day'])&&isset($_GET['time'])&&$_GET['day']!=null&&$_GET['time']!
 {
     require ("../view/ReservationView.php");
 
-  //  if(isset($_GET['submit']))
+  //  if(isset($_GET['submit'])) apadsat
 
 }
 function isTimeValid($time)
