@@ -9,28 +9,19 @@
 
 <h2>Valami</h2>
 <table border="2px">
-<?php $apadpicsaja=array('Hetfo','Kedd','Szerda','Csütörtök','Péntek');?>
+<?php $apadpicsaja=array('H','K','Sz','Cs','P');?>
 
     <?php for($i=15;$i<19;$i++): ?>
  <tr>
      <?php for($j=0;$j<5;$j++) : ?>
      <td class="apad">
+         <a href="ReservationController.php?day=<?=$apadpicsaja[$j]?>&time=<?= $i?>">
      <?= $apadpicsaja[$j].": ".$i." óra"?>
+         </a>
      </td>
      <?php endfor; ?>
  </tr>
     <?php endfor; ?>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
